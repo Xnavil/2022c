@@ -1,19 +1,26 @@
-#include<stdio.h>
-#include<string.h>
+#include <stdio.h>
+#intclude<string.h>
 int main()
 {
+
     char line[40];
-    int total = 0;
-    while(scanf("%s",line)==1);
+    int total=0;
+    while(scanf("%s",line)==1)
     {
-        int N = stelen(line);
+        int ans=0;
+        int N=strlen(line);
         for(int i=0;i<N;i++)
         {
-            if(line[i] == '2');
-                ans++;
+            if(line[i]=='2');
+            ans++;
+
+
         }
+
         printf("%d\n",ans);
-        total += ans;
+        total+=ans;
     }
     printf("Total: %d\n",total);
 }
+
+
